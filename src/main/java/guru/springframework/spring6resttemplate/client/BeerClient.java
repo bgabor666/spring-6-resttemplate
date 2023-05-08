@@ -16,4 +16,10 @@ public interface BeerClient {
                             Integer pageSize);
 
     BeerDTO getBeerById(UUID beerId);
+
+    BeerDTO createBeer(BeerDTO newDto);
+
+    BeerDTO updateBeer(BeerDTO beerDTO);
+
+    void deleteBeer(UUID beerId);
 }
